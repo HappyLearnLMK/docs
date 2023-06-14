@@ -2,7 +2,59 @@
 
 ## 상품 json
 
-1. 상품 category 페이지 (/product/category)  
+1. 상품 저장 (/product/save_product)  
+   POST
+
+- req (Mul)
+
+```json
+{
+"file" : imagefile,
+"productSaveReqDto":
+    {
+        "mainCategory": "cloths",
+        "middleCategory": "outer",
+        "productName" : "test3",
+        "wholePrice": 1000,
+        "retailPrice": 3000,
+        "saleYn" : true,
+        "productOptionsReqDtoList" : [
+					{   "optionName" : "Blue",
+					    "optionVale": "XL",
+					    "currentQuantity" : 123,
+					},
+					{   "optionName" : "Blue",
+					    "optionVale": "L",
+					    "currentQuantity" : 123,
+					},
+				]
+    }
+}
+```
+
+- res
+
+```json
+{
+	"code": 1,
+	"msg": "상품 등록 완료",
+	"data": null
+}
+```
+
+- res error
+
+```json
+{
+	"code": -1,
+	"msg": "Category 가 존재하지 않습니다.",
+	"data": null
+}
+```
+
+---
+
+2. 상품 category 페이지 (/product/category)  
    POST
 
 - req
@@ -77,49 +129,3 @@
 	}
 }
 ```
-
-2. 상품 저장 (/product/save_product)  
-   POST
-
-- req (Mul)
-
-```json
-{
-"file" : imagefile,
-"productSaveReqDto":
-    {
-        "mainCategory": "cloths",
-        "middleCategory": "outer",
-        "productName" : "test3",
-        "wholePrice": 1234,
-        "retailPrice": 1234,
-        "saleYn" : true,
-        "productOptionsReqDtoList" : []
-    }
-}
-```
-
-- res
-
-```json
-{
-	"code": 1,
-	"msg": "상품 등록 완료",
-	"data": null
-}
-```
-
-- res error
-
-```json
-{
-	"code": -1,
-	"msg": "Category 가 존재하지 않습니다.",
-	"data": null
-}
-```
-
-- 이미지 쏘는것
-  등록은 X, multipart 구성 방법밖에 모름...
-
-- namingconvention -> DB Seq value -> "P0001"
