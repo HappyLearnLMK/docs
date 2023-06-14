@@ -52,6 +52,8 @@
 }
 ```
 
+---
+
 3. 상품 QnA (/product/qna?productCode=10)  
    GET
 
