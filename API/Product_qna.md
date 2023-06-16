@@ -2,7 +2,7 @@
 
 ## 상품QnA json
 
-1. 상품 QnA 질의 (/product/question)  
+1. 상품 QnA 질의 (/product/qna/question)  
    POST
 
 - req
@@ -29,7 +29,7 @@
 
 ---
 
-2. 상품 QnA 응답 (/product/answer)  
+2. 상품 QnA 응답 (/product/qna/answer)  
    POST
 
 - req
@@ -54,7 +54,7 @@
 
 ---
 
-3. 상품 QnA (/product/qna?productCode=10)  
+3. 상품 QnA (/product/qna/qna?productCode=10)  
    GET
 
 - res
