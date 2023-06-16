@@ -65,6 +65,7 @@
 	"msg": "상품 QnA",
 	"data": [
 		{
+			"qnaSeq" : 1
 			"customerId": "CUSTOMER123@hanmail.com",
 			"sellerID": "SELLER123@naver.com",
 			"qnaType": "배송",
@@ -73,6 +74,7 @@
 			"answer": "배송 기간은 3~5일 정도 걸립니다."
 		},
 		{
+			"qnaSeq" : 2
 			"customerId": "CUSTOMER111@hanmail.com",
 			"sellerID": "SELLER123@naver.com",
 			"qnaType": "재입고",
