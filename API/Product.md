@@ -21,12 +21,12 @@
         "productOptionsReqDtoList" : [
 					{   "optionName" : "Blue",
 					    "optionVale": "XL",
-					    "currentQuantity" : 123,
+					    "currentQuantity" : 123
 					},
 					{   "optionName" : "Blue",
 					    "optionVale": "L",
-					    "currentQuantity" : 123,
-					},
+					    "currentQuantity" : 123
+					}
 				]
     }
 }
